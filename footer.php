@@ -1,5 +1,5 @@
 <footer>
-	Mention legal &nbsp &nbsp    Rejoignez nous  &nbsp&nbsp     FAQ")
+	Mention legal &nbsp &nbsp    Rejoignez nous  &nbsp&nbsp     FAQ
 
 </footer>
 	

@@ -95,7 +95,7 @@ include('header.php');
 
 
 
-Link : <a href='...'>...</a>, permits to link to another web object ( retour vers toutes les races)
+Link : <a href=''>...</a>, permits to link to another web object ( retour vers toutes les races)
 
 utiliser un div ?? Puis CSS
 

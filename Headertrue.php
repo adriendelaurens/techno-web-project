@@ -11,8 +11,8 @@
 <p><b>Bienvenue sur notre site, trouvez le compagnon de vos reves</b></p>
 <p style='text-align: center;'>
 </p>
-
-
+	</body>
+	
 <header>
 	
 <a href = 'page accueil.html'> page d'accueil</a>&nbsp; 
@@ -27,7 +27,7 @@
 
 
 
-<header>
+</header>
 	
 
 <img
@@ -35,4 +35,12 @@
     alt=""
     height="600px" 
     width="1000px" 
+   
 />
+	
+<footer>
+	echo("c'est mon footer")
+
+</footer>
+	
+	

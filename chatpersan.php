@@ -80,7 +80,7 @@ include('header.php');
 	    include('footer.php)
 ?>
 
-</html>
+
 
 
 
@@ -105,3 +105,4 @@ Meta tag : information about the page used by search engine
 Em and strong tag : <em>...</em>, <strong>...</strong>, to emphasize some text
 
  -->
+</html>

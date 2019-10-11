@@ -2,7 +2,7 @@
 <html>
 
 <?php
-include ('headertrue.html');
+include ('headertrue.php');
 ?>
 
 <head>	
@@ -16,22 +16,22 @@ include ('headertrue.html');
 </h1>
 <ol> liste
 <br>
-<li> article1 <form method="post" action = "cartpage.html">
+<li> article1 <form method="post" action = "cartpage.php">
 <input type="submit" value="supprimer l'article" > </li>
 <br>
-<li> article2 <form method="post" action = "cartpage.html">
+<li> article2 <form method="post" action = "cartpage.php">
 <input type="submit" value="supprimer l'article" > </li>
 <br>
-<li> article3 <form method="post" action = "cartpage.html">
+<li> article3 <form method="post" action = "cartpage.php">
 <input type="submit" value="supprimer l'article" > </li>
 <br>
-<li> article4 <form method="post" action = "cartpage.html">
+<li> article4 <form method="post" action = "cartpage.php">
 <input type="submit" value="supprimer l'article" > </li>
 <br>
-<li> article5 <form method="post" action = "cartpage.html">
+<li> article5 <form method="post" action = "cartpage.php">
 <input type="submit" value="supprimer l'article" > </li>
 <br>
-<li> article6 <form method="post" action = "cartpage.html">
+<li> article6 <form method="post" action = "cartpage.php">
 <input type="submit" value="supprimer l'article" > </li>
 </li>
 

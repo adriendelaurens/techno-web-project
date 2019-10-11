@@ -19,10 +19,14 @@
 
 
 
-<a href = 'recherche.html'> recherche	</a>&nbsp;
+<a href = 'Recherche.html'> recherche	</a>&nbsp;
 
 
-<a href= 'Gamme.html' > Nos Races de Chaton </a>&nbsp;
+<a href= 'chatpersan.html' > Nos Races de Chaton </a>&nbsp;
+	
+<a href= 'cartpage.html' > Mon panier </a>&nbsp;
+
+<a href= 'createaccount.html' > Crée mon compte </a>&nbsp;
 
 
 
@@ -39,8 +43,7 @@
 />
 	
 <footer>
-	echo("c'est mon footer")
+	Mention legal &nbsp &nbsp    Rejoignez nous  &nbsp&nbsp     FAQ")
 
 </footer>
-	
 	

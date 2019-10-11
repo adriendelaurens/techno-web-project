@@ -2,7 +2,7 @@
 <html>
 
 <?php
-include ('headertrue.php');
+include ('header.php');
 ?>
 
 <head>	
@@ -37,3 +37,7 @@ include ('headertrue.php');
 
 </ol>
 </body>
+<?php
+include ('footer.php')
+?>
+</html>

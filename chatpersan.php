@@ -76,6 +76,9 @@ include('headertrue.php');
 	
       <?php  ?>
     </body>
+<?php
+	    include('footer.php)
+?>
 
 </html>
 

@@ -1,5 +1,5 @@
 <html>
-<?php include ('header.css');?>
+<link rel="stylesheet" href="cartpage.css"/>
 <body>
 
 

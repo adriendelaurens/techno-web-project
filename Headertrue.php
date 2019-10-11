@@ -15,18 +15,18 @@
 	
 <header>
 	
-<a href = 'page accueil.html'> page d'accueil</a>&nbsp; 
+<a href = 'page accueil.php'> page d'accueil</a>&nbsp; 
 
 
 
-<a href = 'Recherche.html'> recherche	</a>&nbsp;
+<a href = 'Recherche.php'> recherche	</a>&nbsp;
 
 
-<a href= 'chatpersan.html' > Nos Races de Chaton </a>&nbsp;
+<a href= 'chatpersan.php' > Nos Races de Chaton </a>&nbsp;
 	
-<a href= 'cartpage.html' > Mon panier </a>&nbsp;
+<a href= 'cartpage.php' > Mon panier </a>&nbsp;
 
-<a href= 'createaccount.html' > Crée mon compte </a>&nbsp;
+<a href= 'createaccount.php' > Crée mon compte </a>&nbsp;
 
 
 

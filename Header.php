@@ -26,7 +26,7 @@
 	
 <a href= 'cartpage.php' > Mon panier </a>&nbsp;
 
-<a href= 'createaccount.php' > Crée mon compte </a>&nbsp;
+<a href= 'createaccount.php' > Créer mon compte </a>&nbsp;
 
 
 

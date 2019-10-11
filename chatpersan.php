@@ -77,7 +77,7 @@ include('header.php');
       <?php  ?>
     </body>
 <?php
-	    include('footer.php)
+	    include('footer.php')
 ?>
 
 

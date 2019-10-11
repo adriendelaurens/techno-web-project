@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+	
+<?php include('header.php')?>
+	
 <head>
 	<title> Creer votre compte</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
@@ -47,4 +50,5 @@
     </div>
 
 </body>
+<?php include ('footer.php') ?>
 </html>

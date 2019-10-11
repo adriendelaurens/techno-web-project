@@ -11,3 +11,7 @@
 		<a class="search-button" href="#"><img class="rechercher-logo" src="Rechercher.png"> </a>
 	</div>
 </body>
+<?php
+include ('footer.php')
+?>
+</html>

@@ -8,8 +8,10 @@
 <?php include ('databaseconnection.php');?>
 <body>
 	<div class = "search-bar">
-		<input class ="search-txt" type="text" placeholder="Rechercher un produit" name="produit">
-		<a class="search-button" href="displayproducts.php"><img class="rechercher-logo" src="Rechercher.png"> </a>
+		<form method="post" action="displayproducts.php">
+		<input type ="text" placeholder="Rechercher un produit" name="produit"/>
+		<button type="submit" ><img class="rechercher-logo" src="Rechercher.png"> </a>
+		</form>	
 	</div>
 </body>
 <?php

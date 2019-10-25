@@ -4,7 +4,8 @@
 	<title> Recherche</title>
 	<link rel="stylesheet" href="Recherche.css" />
 </head>
-<?php include ('header.php')?>
+<?php include ('header.php');?>
+<?php include ('databaseconnection.php');?>
 <body>
 	<div class = "search-bar">
 		<input class ="search-txt" type="text" placeholder="Rechercher un produit" name="produit">

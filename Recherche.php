@@ -9,7 +9,7 @@
 <body>
 	<div class = "search-bar">
 		<input class ="search-txt" type="text" placeholder="Rechercher un produit" name="produit">
-		<a class="search-button" href="#"><img class="rechercher-logo" src="Rechercher.png"> </a>
+		<a class="search-button" href="displayproducts.php"><img class="rechercher-logo" src="Rechercher.png"> </a>
 	</div>
 </body>
 <?php

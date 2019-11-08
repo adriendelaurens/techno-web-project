@@ -3,7 +3,7 @@
 <html>
 
 <?php
-$bdd=new PDO('mysql:host=localhost;dbname=project','root',''); // dans mon fichier reference www sur ordi
+include("databaseconnection.php"); // dans mon fichier reference www sur ordi
 $userId=1; // a definir dans les autres pages 
 // requete 1: afficher les commandes de l'utilisateur(ici 1)
 $response_orders = $bdd->query("SELECT * FROM `orders` where user_id='$userId' ");

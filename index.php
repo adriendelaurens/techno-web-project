@@ -3,7 +3,7 @@ session_start();
 ?>
 <?php
 //TODO assign database connexion into $database variable
-$database = new PDO('mysql:host=localhost;dbname=chats','root',''); 
+include ('databaseconnection.php');
 
 
 //TODO include checkUser.php file

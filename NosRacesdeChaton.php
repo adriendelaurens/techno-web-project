@@ -33,15 +33,6 @@
 	<img src="persan.jpg"  height="250"width"100"  />	
 	
 
-
-
-	<style>
-	table
-	{border-collapse: collapse;}
-	td, th
-	{border: 1px solid black;}
-	</style>
-
 	<table>
 	 <caption> Caracteristiques du chat Persan          </caption>
 	  <thead><tr>
@@ -167,7 +158,7 @@
 	
 	<h2> Voici le Sphynx: </h2>
 	
-	<img src="sphynx.jpg"  height="350"width"300"  />	
+	<img src="sphynx.jpg"/>	
 	
 
 

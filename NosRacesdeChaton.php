@@ -99,7 +99,7 @@
 	
 	<h2> Voici le chat Maine coon: </h2>
 	
-	<img src="mainecoon.png"  height="350"width"300"  />	
+	<img src="mainecoon.jpg"  height="350"width"300"  />	
 	
 
 
@@ -167,7 +167,7 @@
 	
 	<h2> Voici le Sphynx: </h2>
 	
-	<img src="sphynx.png"  height="350"width"300"  />	
+	<img src="sphynx.jpg"  height="350"width"300"  />	
 	
 
 

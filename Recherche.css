@@ -1,0 +1,31 @@
+body {
+background-color: #d8d8d8;
+margin :0;
+padding:0;
+}
+.search-bar{
+	position : absolute;
+	top : 50%;
+	left: 50%;
+	background-color : #ffffff;
+	height : 40px;
+	border-radius : 40px;
+	padding : 10px;
+}
+.search-button{
+	color : #000000;
+	float : right;
+	width : 40 px;
+	height : 40 px;
+	background-color : #ffffff;
+}
+.search-txt{
+	border : none;
+	background-color : #fffffff;
+	height : 40px;
+	
+}
+.rechercher-logo{
+	height : 40px;
+	width:40px;
+}

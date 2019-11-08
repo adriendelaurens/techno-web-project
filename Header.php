@@ -14,8 +14,6 @@
 
 	
 <header>
-<?php //<a href="index.php?page=homepage">Page d'accueil</a>
-?>
 
 <form method="get" action ="index.php" name="homepage">
 <input type="hidden" name="page" value="homepage">

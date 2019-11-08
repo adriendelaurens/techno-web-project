@@ -2,14 +2,14 @@
 
 <html>
 
-<?php 
-include ("databaseconnection.php");
-?>
+<?php include ("databaseconnection.php");?>
 
 <body>
 <var> compteur
-<?php 
-$query = "SELECT id,name,description,unit_price from products WHERE name LIKE '%".$_POST['produit']."%'";
+<?php
+if (isset($_GET['produit'])) { $produit = $_GET['produit']; }
+else {$produit = '';} 
+$query = "SELECT id,name,description,unit_price from products WHERE name LIKE '%".$produit."%'";
 echo $query;
 $response = $bdd->query($query);
 $compteur = 0;

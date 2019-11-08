@@ -4,6 +4,7 @@ session_start();
 <?php
 //TODO assign database connexion into $database variable
 include ('databaseconnection.php');
+include('Header.php');
 
 
 //TODO include checkUser.php file
@@ -40,14 +41,10 @@ if(file_exists($page.'.php')) {
 <?php
 
 //TODO add header display
-include('Header.php');
+
 //TODO if 'view/'.$page'.php' exists then include it (use file_exists($filename) function)
 //           else include 'view/main.php' (it has to exist)
-if(file_exists($page.'.php')) {
-  include($page.'.php');
-}else{
-	include('homepage.php');
-}
+
 ?>
 <?php
 

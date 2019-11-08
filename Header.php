@@ -27,7 +27,7 @@
 </form>
 
 <form method="get" action ="index.php" name="NosRacesdeChaton">
-<input type="hidden" name="page" value="NosRacedeChaton">
+<input type="hidden" name="page" value="NosRacesdeChaton">
 <input type="submit" value="NosRacesdeChaton" >
 </form>
 

@@ -1,24 +1,37 @@
 <html>
-<link rel="stylesheet" href="Header.css"/>
+
+<link rel="stylesheet" href="header.css"/>
+
+
 <body>
-
-
-
-
 
 <p><b>Naviguez sur notre site :</b></p>
 <p style='text-align: center;'>
 </p>
-	</body>
+
+</body>
+
+
 	
 <header>
-	
-<a href = 'homepage.php'> page d'accueil</a>&nbsp; 
-<a href = 'Recherche.php'> recherche	</a>&nbsp;
-<a href= 'chatpersan.php' > Nos Races de Chaton </a>&nbsp;
-	
-<a href= 'cartpage.php' > Mon panier </a>&nbsp;
-<a href= 'createaccount.php' > Créer mon compte </a>&nbsp;
+
+<form method="post" action ="index.php">
+<input type="submit" value="Page d'accueil" >
+
+<form method="post" action ="index.php">
+<input type="submit" value="Recherche" >
+
+
+<form method="post" action ="index.php">
+<input type="submit" value="Nos Races de Chaton" >
+
+<form method="post" action ="index.php">
+<input type="submit" value="Mon panier" >
+
+<form method="post" action ="index.php">
+<input type="submit" value="Créer mon compte" >
+
 </header>
+
 	
 </html>

@@ -73,9 +73,10 @@
 
 	</h3>
 
-	<form method="post" action ="cartpage.php">
+	<form method="get" action ="index.php" name="cartpage">
+	<input type=hidden" name="page" value="persan">
 	<input type="submit" value="Ajouter un article au panier" >
-	<img src="bouton-panier.png"  width="30"  height="30">
+	<img src="caddie.jpg"  width="30"  height="30">
 	
 
 	</div>
@@ -139,8 +140,10 @@
 
 
 
-		<form method="post" action ="cartpage.php">
-	 <input type="submit" value="Ajouter un article au panier" >
+	<form method="get" action ="index.php" name="cartpage">
+	<input type=hidden" name="page" value="mainecoon">
+	<input type="submit" value="Ajouter un article au panier" >
+	<img src="caddie.jpg"  width="30"  height="30">
 
 
 	</div>
@@ -171,7 +174,7 @@
 	</style>
 
 	<table>
-	 <caption> Caracteristiques du Maine coon</caption>
+	 <caption> Caracteristiques du Sphynx</caption>
 	  <thead><tr>
 		<th>Caracteristiques<br  /> </th>
 		<th>Notes<br  /> </th>
@@ -207,8 +210,10 @@
 
 
 
-		<form method="post" action ="cartpage.php">
-	 <input type="submit" value="Ajouter un article au panier" >
+	<form method="get" action ="index.php" name="cartpage">
+	<input type=hidden" name="page" value="sphynx">
+	<input type="submit" value="Ajouter un article au panier" >
+	<img src="caddie.jpg"  width="30"  height="30">
 
 
 	</div>

@@ -14,34 +14,22 @@
 
 	
 <header>
-<?php //<a href="index.php?page=homepage">Page d'accueil</a>
-?>
 
-<form method="get" action ="index.php" name="homepage">
-<input type="hidden" name="page" value="homepage">
+<form method="post" action ="index.php" name="homepage">
 <input type="submit" value="Page d'accueil" >
-</form>
 
-
-<form method="get" action ="index.php" name="Recherche">
-<input type="hidden" name="page" value="Recherche">
+<form method="post" action ="index.php" name="Recherche">
 <input type="submit" value="Recherche" >
-</form>
 
-<form method="get" action ="index.php" name="NosRacesdeChaton">
-<input type="hidden" name="page" value="NosRacedeChaton">
-<input type="submit" value="NosRacesdeChaton" >
-</form>
+
+<form method="post" action ="index.php" name="NosRacesdeChaton">
+<input type="submit" value="Nos Races de Chaton" >
 
 <form method="post" action ="index.php" name="cartpage">
-<input type="hidden" name="page" value="cartpage">
 <input type="submit" value="Mon panier" >
-</form>
 
 <form method="post" action ="index.php" name="createaccount">
-<input type ="hidden" name="page" value="createaccount">
 <input type="submit" value="Créer mon compte" >
-</form>
 
 </header>
 

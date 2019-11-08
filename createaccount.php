@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
 	
-
-	
 <head>
-	<title> Creer votre compte</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+	<title> Créer votre compte</title>
+	<link rel="stylesheet" href="CreateAccount.css">
 </head>
 <body>
 <h1>S'inscrire</h1>
@@ -17,7 +15,7 @@
                 <label>Nom :<sup>*</sup></label>
                 <input type="text" name="name" class="form-control">
             </div> 
-		<div class="form-group">
+			<div class="form-group">
                 <label>Prenom :<sup>*</sup></label>
                 <input type="text" name="firstName" class="form-control" >             
             </div> 
@@ -40,12 +38,13 @@
             <div class="form-group">
                 <label>Confirm password:<sup>*</sup></label>
                 <input type="password" id = "confirm_password" name="confirm_password" class="form-control">
-            </div>
-            <p>En creant votre compte vous acceptez nos <a style="color:teal">Termes de confidentialite</a>.</p>
-    <div class="clearfix">
-      <button type="button" class="cancelbtn">Annuler</button>
-      <button type="submit" class="signupbtn">S'inscrire</button>
-    </div>
+            </div> 	
+			<p>En creant votre compte vous acceptez nos Termes de confidentialite.</p> 
+		<div >
+			<button type="button" class="cancelbtn">Annuler</button>
+			<button type="submit" class="signupbtn">S'inscrire</button>
+		</div>
+	</div>
 </body>
 
 </html>

@@ -7,12 +7,10 @@
 </head>
 
 <body>
-	<div class = "search-bar">
-		<form method="post" action="displayproducts.php">
-		<input type ="text" placeholder="Rechercher un produit" name="produit"/>
-		<button type="submit" ><img class="rechercher-logo" src="Rechercher.png"> </a>
-		</form>	
-	</div>
+	<form method="get" action ="index.php" name="displayproducts">
+	<input type="hidden" name="page" value="displayproducts">
+	<input type ="text" placeholder="Rechercher un produit" name="produit"/>
+	<button type="submit" ><img class="rechercher-logo" src="Rechercher.png"> </a>
 </body>
 
 </html>

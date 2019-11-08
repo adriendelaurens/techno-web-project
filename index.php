@@ -1,16 +1,20 @@
 <?php
 session_start();
-include("databaseconnection.php");?>
+?>
 <?php
 //TODO assign database connexion into $database variable
-$database = new PDO('mysql:host=localhost;dbname=dump','root',''); 
+$database = new PDO('mysql:host=localhost;dbname=chats','root',''); 
 
 
 //TODO include checkUser.php file
 ?>
 <?php
 //TODO (in the next step) control user access
-$page = $_GET['name'];
+if (isset($_GET['page'])){
+	$page = $_GET['page'];	
+} else {
+	$page = 'homepage';
+}
 
 //if 'action/'.$page'.php' exists then include it (use file_exists($filename) function)
 if(file_exists($page.'.php')) {

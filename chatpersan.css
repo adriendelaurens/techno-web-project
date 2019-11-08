@@ -1,18 +1,19 @@
-h1
-{
-	color:brown;
-}
-
-
-
-
-body
-{
-background-color:red;
+background-color:TEAL
 }
 
 table{margin: 0 auto;}
 
+
+#haut
+{
+	width:900px;
+	height:200px;
+	margin:0 auto;
+	background-color:TEAL;
+	text-align:center;
+	align-content:center;
+	
+}
 
 #fond
 {

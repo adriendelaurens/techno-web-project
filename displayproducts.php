@@ -2,7 +2,9 @@
 
 <html>
 
-
+<?php 
+include ("databaseconnection.php");
+?>
 
 <body>
 <var> compteur

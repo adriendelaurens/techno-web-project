@@ -31,12 +31,12 @@
 <input type="submit" value="NosRacesdeChaton" >
 </form></td>
 <td>
-<form method="post" action ="index.php" name="cartpage">
+<form method="get" action ="index.php" name="cartpage">
 <input type="hidden" name="page" value="cartpage">
 <input type="submit" value="Mon panier" >
 </form></td>
 <td>
-<form method="post" action ="index.php" name="createaccount">
+<form method="get" action ="index.php" name="createaccount">
 <input type ="hidden" name="page" value="createaccount">
 <input type="submit" value="Créer mon compte" >
 </form></td>

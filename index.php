@@ -7,7 +7,6 @@ include ('databaseconnection.php');
 include('Header.php');
 $username = "";
 $email    = "";
-$errors = array();
 //TODO include checkUser.php file
 ?>
 <?php
@@ -32,36 +31,76 @@ if(file_exists($page.'.php')) {
 //             $database variable (initialized in $database.php) 
 // to insert or update data into database
 if (isset($_POST['inscription'])) {
+	$test = checkUser($bdd);
+	echo $test;
+}
+	function checkUser($bdd){
+	$erreur = 0; // Changer l'initialisation  : Passer en Array pour imprimer les erreurs
+	$username = "";
+	$email    = "";
 	$username = $_POST['username'];
 	$email = $_POST['email'];
-	$password_1 = $_POST['password'];
-	$password_2 = $_POST['confirm_password'];
+	$mdp1 = $_POST['password'];
+	$mdp2 = $_POST['confirm_password'];
 	if (empty($username)) { 
-		array_push($errors, "Le nom d'utilisateur est requis"); }
+		$erreur++; // Ajouter erreur : Champ utilisateur vide
+		}
 	if (empty($email)) { 
-		array_push($errors, "L'email est requis"); }
-	if (empty($password_1)) { 
-		array_push($errors, "Le mot de passe est requis"); }
-	if ($password_1 != $password_2) {
-		array_push($errors, "Les mots de passes ne sont pas identiques");
+		$erreur++;  // Ajouter erreur : Champ Email vide
+		}
+	if (empty($mdp1)) { 
+		$erreur++; // Ajouter erreur : Chat mot de passe vide
+		} 
+	if ($mdp1 != $mdp2) {
+		$erreur++; // Ajouter erreur : Mots de passe différents
 	}
-	$userUsername=$bdd -> query("SELECT username FROM users WHERE username='$username' LIMIT 1");
-	$userEmail=$bdd -> query("SELECT email FROM users WHERE email='$email' LIMIT 1");
-		if ($userUsername === $username) {
-			array_push($errors, "Nom d'utilisateur déjà utilisé");
-		}
-
-		if ($userEmail === $email) {
-			array_push($errors, "Email déjà utilisé");
-		}
+	$stmt = $bdd->prepare("SELECT COUNT(*) FROM users WHERE username= '".$username."' OR email = '".$email."' LIMIT 1"); 
+	$stmt->execute(); 
+	$row = $stmt->fetchColumn();
+	if ($erreur > 0){ // Changer la condition pour vérifier nombre de colonne
+		return "Champ vide"; // return valeurs de erreur
+	}
 	
-	if (count($errors) == 0) {
-		$password = md5($password_1);
+	if ($row == 0) {
+		$password = md5($mdp1);
 		$bdd ->query("INSERT INTO users (username, email, password) VALUES('$username', '$email', '$password')");
 		$_SESSION['username'] = $username;
 		$_SESSION['success'] = "Vous êtes connecté";
+		return "Utilisateur créé";
 	}
+	return ("Utilisateur existant");
 }
+if (isset($_POST['connection'])){
+	$test = checkUserConnection($bdd);
+	echo $test;
+}
+function checkUserConnection($bdd){
+	$erreur = 0; // Changer l'initialisation  : Passer en Array pour imprimer les erreurs
+	$username = "";
+	$username = $_POST['username'];
+	$mdp = $_POST['password'];
+	$password = md5($mdp);
+	if (empty($username)) { 
+		$erreur++; // Ajouter erreur : Champ utilisateur vide
+		}
+	if (empty($mdp1)) { 
+		$erreur++; // Ajouter erreur : Chat mot de passe vide
+		} 
+	$stmt = $bdd->prepare("SELECT COUNT(*) FROM users WHERE username= '".$username."' AND password = '".$password."' LIMIT 1"); 
+	$stmt->execute(); 
+	$row = $stmt->fetchColumn();
+	if ($erreur > 0){ // Changer la condition pour vérifier nombre de colonne
+		return "Champ vide"; // return valeurs de erreur
+	}
+	
+	if ($row == 0) {
+		$_SESSION['username'] = $username;
+		$_SESSION['success'] = "Vous êtes connecté";
+		return "Vous êtes connecté";
+	}
+	return ("Vous êtes connecté");
+}
+
 // TODO insert the start html envelope (<html><head>....</head><body>
 
 // TODO using $page decide to include header.php

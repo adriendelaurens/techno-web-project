@@ -12,19 +12,19 @@
         <form action="" method="post" name= "Inscription" > 
            
            <div class="form-group">
-                <label>Nom :<sup>*</sup></label>
+                <label>Nom :</label>
                 <input type="text" name="name" class="form-control">
             </div> 
 			<div class="form-group">
-                <label>Prenom :<sup>*</sup></label>
+                <label>Prenom :</label>
                 <input type="text" name="firstName" class="form-control" >             
             </div> 
             <div class="form-group">
-				<label>Nom d'utilisateur</label>
+				<label>Nom d'utilisateur<sup>*</sup></label>
 				<input type="text" name="username" value="<?php echo $username; ?>">
 			</div>
             <div class="form-group">
-                <label>Date de naissance :<sup>*</sup></label>
+                <label>Date de naissance :</label>
                 <input type="date" name="birthDate" class="form-control">
             </div> 
            

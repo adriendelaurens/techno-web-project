@@ -72,10 +72,19 @@ function checkUserConnection($bdd){
 	}
 	return ("Vous êtes connecté");
 }
-if (isset($_POST['deconnexion'])){
-	session_destroy();
+
+if (isset($_GET['page'])){
+	$page = $_GET['page'];	
+	echo($_GET['page']);
+} 
+else {
+	$page = 'homepage';
+	if (isset($_GET['deconnexion'])){
+		echo("vous etes deconnecte");
+		session_destroy();	
 	
 }
+} 
 include('Header.php');
 $username = "";
 $email    = "";
@@ -83,11 +92,6 @@ $email    = "";
 ?>
 <?php
 //TODO (in the next step) control user access
-if (isset($_GET['page'])){
-	$page = $_GET['page'];	
-} else {
-	$page = 'homepage';
-}
 
 //if 'action/'.$page'.php' exists then include it (use file_exists($filename) function)
 if(file_exists($page.'.php')) {

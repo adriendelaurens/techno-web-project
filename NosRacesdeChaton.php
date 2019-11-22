@@ -74,10 +74,10 @@
 	</h3>
 
 	<form method="get" action ="index.php" name="cartpage">
-	<input type=hidden" name="page" value="persan">
+	<input type="hidden" name="page" value="persan">
 	<input type="submit" value="Ajouter un article au panier" >
 	<img src="caddie.jpg"  width="30"  height="30">
-	
+	</form>
 
 	</div>
 	
@@ -141,10 +141,10 @@
 
 
 	<form method="get" action ="index.php" name="cartpage">
-	<input type=hidden" name="page" value="mainecoon">
+	<input type="hidden" name="page" value="mainecoon">
 	<input type="submit" value="Ajouter un article au panier" >
 	<img src="caddie.jpg"  width="30"  height="30">
-
+	</form>
 
 	</div>
 
@@ -211,10 +211,10 @@
 
 
 	<form method="get" action ="index.php" name="cartpage">
-	<input type=hidden" name="page" value="sphynx">
+	<input type="hidden" name="page" value="sphynx">
 	<input type="submit" value="Ajouter un article au panier" >
 	<img src="caddie.jpg"  width="30"  height="30">
-
+	</form>
 
 	</div>
 

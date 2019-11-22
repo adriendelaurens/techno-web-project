@@ -2,7 +2,7 @@
 
 <html>
 
-<?php include ("databaseconnection.php");?>
+
 
 <body>
 <var> compteur
@@ -15,14 +15,24 @@ $response = $bdd->query($query);
 $compteur = 0;
 while ($results = $response->fetch() ){
 	var_dump($results);
+
+
 ?>
-
- 	<form method="post" action="cartpage.php">
-	<input type="submit" value="ajouter l'article au panier" name="article"<?php.($compteur+1)?> 
-
-
+<br/>
+<form method="get" action ="index.php" name="cartpage">
+<input type="hidden" name="page" value="cartpage">
+<input type="hidden" name="product" value="<?php echo $results['id']; ?>">
+Ajouter <input type="number" name="quantity"> produit de <?php echo $results['name']; ?>
+<input type="submit" value="ajouter"> 
+</form>
+</br>	
 <?php
+/*
 	$compteur ++;
+	for($i = 0; $i<count($results);$i++)
+	{echo ($results[$i]);
+	}
+	*/
 }
 
 $response->closeCursor() ;

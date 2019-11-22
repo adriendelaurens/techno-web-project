@@ -47,6 +47,7 @@ if (!empty($_SESSION)){
 <form method="post" action ="index.php" name="deconnexion">
 <input type ="hidden" name="deconnexion" value="deconnexion">
 <input type="submit" value="Déconnexion" >
+</form>
 </td>
 <?php } else { ?>
 <td>

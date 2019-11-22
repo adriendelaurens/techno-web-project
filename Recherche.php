@@ -9,8 +9,9 @@
 <body>
 	<form method="get" action ="index.php" name="displayproducts">
 	<input type="hidden" name="page" value="displayproducts">
-	<input type ="text" placeholder="Rechercher un produit" name="produit"/>
-	<button type="submit" ><img class="rechercher-logo" src="Rechercher.png"> </a>
+	<input type ="text" placeholder="Rechercher un produit" name="produit">
+	<button type="submit" value="displayproducts" ><img class="rechercher-logo" src="Rechercher.png"> </a>
+	</form>
 </body>
 
 </html>

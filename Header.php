@@ -40,6 +40,23 @@
 <input type ="hidden" name="page" value="createaccount">
 <input type="submit" value="Créer mon compte" >
 </form></td>
+<?php 
+if (!empty($_SESSION)){ 
+?>
+<td>
+<form method="post" action ="index.php" name="deconnexion">
+<input type ="hidden" name="deconnexion" value="deconnexion">
+<input type="submit" value="Déconnexion" >
+</td>
+<?php } else { ?>
+<td>
+<form method="post" action ="index.php" name="connexion">
+<input type ="hidden" name="connexion" value="connexion">
+<input type = "text" name = "username" size ="none"> 
+<input type = "password" name = "password" size ="none">
+<input type="submit" value="se connecter" >
+</form></td>
+<?php } ?>
 </tr>
 </table>
 

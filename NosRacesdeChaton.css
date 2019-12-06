@@ -1,0 +1,40 @@
+background-color:TEAL
+}
+
+table{margin: 0 auto;
+border-collapse: collapse;
+}
+td, th
+	{
+border: 1px solid black;
+}
+img {
+  height:350;
+	width:300;
+}  
+
+#haut
+{
+	width:900px;
+	height:200px;
+	margin:0 auto;
+	background-color:TEAL;
+	text-align:center;
+	align-content:center;
+	
+}
+
+#fond
+{
+	width:900px;
+	height:700px;
+	margin:0 auto;
+	background-color:white;
+	text-align:center;
+	align-content:center;
+	
+}
+
+
+
+}

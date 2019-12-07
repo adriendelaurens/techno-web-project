@@ -75,7 +75,7 @@ function checkUserConnection($bdd){
 
 if (isset($_GET['page'])){
 	$page = $_GET['page'];	
-	echo($_GET['page']);
+
 } 
 else {
 	$page = 'homepage';
